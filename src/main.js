@@ -3,7 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Vuex from 'vuex'
+import axios from 'axios'
+import element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.prototype.$http = axios
+Vue.use(Vuex)
+Vue.use(element)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
